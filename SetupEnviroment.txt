@@ -1,0 +1,22 @@
+1. Create a c++ project using visual studio
+2. Go to Solution properties/ Configuration Properties/ General/C++ Language Standar => make sure its c++17 or higher 
+3. Download vcpkg from https://github.com/microsoft/vcpkg.git
+4. cd vcpkg
+5. .\bootstrap-vcpkg.bat
+6. In System variables, select Path > Edit > New, and paste the path to the vcpkg folder.
+7. Run => .\vcpkg integrate install
+8. Run => .\vcpkg install nlohmann-json
+9. Download MSYS2 website: https://www.msys2.org/
+10. open the MSYS2 terminal RUN => pacman -Syu
+11. Run => pacman -S mingw-w64-x86_64-gcc
+12. Add the following paths to your Path variable: C:\msys64\mingw64\bin
+13. g++ --version
+14. Download CMake
+15. create CMakeLists.txt
+16. Run => cmake ..
+17. Run => cmake --build .
+
+
+
+Or
+Compiler directly with g++ run => g++ -O3 -o TheFlattener TheFlattener.cpp -I"C:\Users\mhmdk\Desktop\Projects\vcpkg-master\vcpkg-master\installed\x64-windows\include"
